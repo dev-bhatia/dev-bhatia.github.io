@@ -22,7 +22,8 @@
     <meta name="keywords" content="Engineer, Personal, Website, Blog, Projects" />
 
     <!-- FAVICON -->
-    <link rel=icon href="https://raw.githubusercontent.com/dev-bhatia/storage/master/SITE/favicon-16x16.png">
+    <!-- <link rel=icon href="https://raw.githubusercontent.com/dev-bhatia/storage/master/SITE/favicon-16x16.png"> -->
+    <link rel=icon href="https://raw.githubusercontent.com/dev-bhatia/storage/master/SITE/favicon.ico">
 
     <!-- SITE TITLE ON TAB-->
     <title>Dev Bhatia</title>
@@ -61,6 +62,7 @@
         <!-- ABOUT MAIN -->
         <div class="jumbotron" style="border-radius: 25px; padding-top: 2rem; 
             background: linear-gradient(184deg, #ffbeda 0%, #94bbe97e 25%);
+            padding-bottom: 30px;
             ">
             <div class="container">
                 <div class="d-flex flex-row bd-highlight flex-wrap" style="margin-bottom: 0;">
@@ -83,27 +85,22 @@
                         </a>
                     </div>
                 </div>
-
                 <hr />
-
                 <p>
                     This site primarily exists to organize and document some stuff I've been working on in my
                     spare time. Interests are in software, data science, mechatronics, and user-facing design. Thanks
                     for stopping by!
                 </p>
-
                 <!-- LINKS ABOUT ME -->
-                <button type="button" data-toggle="collapse" data-target="#resume" class="btn btn-success">
-                    <i class="fas fa-chevron-down"></i>
-                    &nbsp;
-                    Brief Resume
+                <button type="button" data-toggle="collapse" data-target="#resume"
+                    class="btn btn-success rotateChevron">
+                    <i class="far fa-arrow-alt-circle-down">&nbsp;</i>
+                    Brief&nbsp;Resume
                 </button>
-
                 <!-- BRIEF RESUME -->
                 <div id="resume" class="collapse">
                     <div class="container">
                         <br />
-
                         <div class="d-flex flex-row bd-highlight flex-wrap">
                             <div class="p-1 flex-grow-1 bd-highlight">
                                 <!-- EXPERIENCE -->
@@ -232,8 +229,6 @@
                 </li>
             </ul>
         </div>
-        <br />
-        <br />
 
         <!-- RESUME GIF MODAL -->
         <div class="modal fade" id="resumeGIF" role="dialog">
@@ -257,11 +252,8 @@
             </div>
         </div>
 
-
-
         <br />
         <br />
-
         <!-- CLOSING -->
         <div class="p-2 bd-highlight">
             <p>
@@ -278,13 +270,18 @@
         <br />
         <br />
         <br />
-
-    </div> <!-- END OF MAIN CONTAINER -->
+    </div>
     <script>
         // FOR TOOLTIPS
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         })
+        // TOGGLE CHEVRON IN BRIEF RESUME
+        $('.rotateChevron').on('click', function (e) {
+            $('.fa-arrow-alt-circle-down').toggleClass("fa-times-circle");
+            $('.btn-success').toggleClass("btn-danger");
+            e.preventDefault();
+        });
     </script>
 </body>
 
