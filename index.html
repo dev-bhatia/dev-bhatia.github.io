@@ -84,7 +84,7 @@
                 <!-- LINKS ABOUT ME -->
                 <button type="button" data-toggle="collapse" data-target="#resume"
                     class="btn btn-success rotateChevron">
-                    <i class="far fa-arrow-alt-circle-down">&nbsp;</i>
+                    <i class="fas fa-chevron-circle-down" style="font-size: 18px;">&nbsp;&nbsp;</i>
                     Brief&nbsp;Resume
                 </button>
                 <!-- BRIEF RESUME -->
@@ -210,9 +210,8 @@
                     </a>
                 </li>
                 <li style="margin-bottom: 10px;">
-                    <a href="https://github.com/dev-bhatia/Gemini_Mars" target="_blank">
-                        The Mars Society - International Gemini Mars Design Competition Finalist (Team Captain)&nbsp;<i
-                            class="fas fa-external-link-alt" style="font-size: 12px; color: var(--secondary);"></i>
+                    <a href="/gemini_mars" target="_blank">
+                        The Mars Society - International Gemini Mars Design Competition Finalist (Team Captain)
                     </a>
                 </li>
                 <li style="margin-bottom: 10px;">
@@ -273,7 +272,7 @@
         })
         // TOGGLE CHEVRON IN BRIEF RESUME
         $('.rotateChevron').on('click', function (e) {
-            $('.fa-arrow-alt-circle-down').toggleClass("fa-times-circle");
+            $('.fa-chevron-circle-down').toggleClass("fa-times-circle");
             $('.btn-success').toggleClass("btn-danger");
             e.preventDefault();
         });
