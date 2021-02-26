@@ -41,25 +41,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-
-    <style>
-        .zoom {
-            transition: transform 0.2s;
-        }
-
-        .zoom:hover {
-            transform: scale(1.08);
-        }
-
-        .shadow {
-            -webkit-box-shadow: 0px 0px 50px -12px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 0px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-    </style>
-
+    <!-- YOUTUBE EMBED VIDEO -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dev-bhatia/vault@main/web/bootstrap-yt-modal.css" />
 </head>
 
-<body>
+<body class="bg-light">
     <div class="container">
         <!-- INTRO -->
         <br />
@@ -67,20 +53,19 @@
         <div class="card border-0 shadow">
             <div class="card-body">
                 <div class="d-flex flex-row flex-wrap">
-                    <div class="p-2 bd-highlight flex-grow-1">
+                    <div class="p-2 flex-grow-1">
                         <h1 class="card-title">Dev Bhatia</h1>
                         <h5 class="card-subtitle mb-2 text-muted">
-                            Undergrad at UC San Diego studying Electrical Engineering
+                            Engineering Undergrad at UC San Diego
                         </h5>
                     </div>
                     <div class="pl-2">
                         <a href="https://www.linkedin.com/in/dev-bhatia" target="_blank"
-                            class="btn btn-outline-primary border-dark zoom">
+                            class="btn btn-outline-dark">
                             <i class="fab fa-linkedin-in"></i>&nbsp;&nbsp;&nbsp;Linkedin
                         </a>
                         &nbsp;&nbsp;
-                        <a href="https://www.github.com/dev-bhatia" target="_blank"
-                            class="btn btn-outline-primary border-dark zoom">
+                        <a href="https://www.github.com/dev-bhatia" target="_blank" class="btn btn-outline-dark">
                             <i class="fab fa-github"></i>&nbsp;&nbsp;&nbsp;Github
                         </a>
                     </div>
@@ -99,7 +84,7 @@
                         <hr class="p-0 m-0" />
                         <!-- <div class="TimelineItem TimelineItem--condensed">
                             <div class="TimelineItem-badge">
-                                <i class="far fa-dot-circle"></i>
+                                &#x292C;
                             </div>
                             <div class="TimelineItem-body">
                                 <b>Tesla</b>
@@ -109,7 +94,7 @@
                         </div> -->
                         <div class="TimelineItem TimelineItem--condensed">
                             <div class="TimelineItem-badge">
-                                <i class="fas fa-compact-disc"></i>
+                                &#x292C;
                             </div>
                             <div class="TimelineItem-body">
                                 <b>Microsoft</b>
@@ -119,7 +104,7 @@
                         </div>
                         <div class="TimelineItem TimelineItem--condensed">
                             <div class="TimelineItem-badge">
-                                <i class="fas fa-compact-disc"></i>
+                                &#x292C;
                             </div>
                             <div class="TimelineItem-body">
                                 <b>Intel</b>
@@ -129,7 +114,7 @@
                         </div>
                         <div class="TimelineItem TimelineItem--condensed">
                             <div class="TimelineItem-badge">
-                                <i class="fas fa-compact-disc"></i>
+                                &#x292C;
                             </div>
                             <div class="TimelineItem-body">
                                 <b>Tesla</b>
@@ -143,7 +128,7 @@
                         <hr class="p-0 m-0" />
                         <div class="TimelineItem TimelineItem--condensed">
                             <div class="TimelineItem-badge">
-                                <i class="fas fa-graduation-cap"></i>
+                                &#x292C;
                             </div>
                             <div class="TimelineItem-body">
                                 <b>UC&nbsp;San&nbsp;Diego</b>
@@ -163,35 +148,33 @@
             <div class="card-body">
                 <h5>Projects</h5>
                 <hr class="p-0" />
-                <!-- <div class="card m-4 border-dark bg-light">
+                <!-- <div class="card m-4 bg-light">
                     <div class="card-body">
                         <h5 class="card-title">
-                            Data Visualization & Analysis Platform for Neuroscience Research
+                            <a href="https://github.com/dev-bhatia" target="_blank">
+                                Data Visualization & Analysis Platform for Neuroscience Research&nbsp;&#x2197;
+                            </a>
                         </h5>
                         <p class="card-text">
                             Data visualization & analysis interface supporting
-                            researchers at The Shtrahman Lab, UCSD to study memory formation 
-                            in the brain. Fullstack web-development with Pyhton (Flask) and
-                            data analysis utilizes the Pandas and Matplotlib packages.
-                            <br />
-                            <a href="#">View&nbsp;Project</a>
+                            researchers at The Shtrahman Lab, UCSD studying memory formation
+                            in the brain. Fullstack web-development with Python (Flask), Docker, and Heroku.
+                            Data analysis libraries utilize the Pandas and Matplotlib packages.
                         </p>
                     </div>
                 </div> -->
-                <div class="card m-4 border-dark bg-light">
+                <div class="card m-4 bg-light">
                     <div class="card-body">
                         <h5 class="card-title">
-                            AmazonMusic Dark&nbsp;Mode
+                            <a href="https://github.com/dev-bhatia/amazonMusicDarkMode" target="_blank">
+                                AmazonMusic Dark&nbsp;Mode&nbsp;&#x2197;
+                            </a>
                         </h5>
                         <p class="card-text">
                             CSS magic to reduce eye strain and increase readability
                             across the AmazonMusic website in the form of a Chrome extension.
                             As of October 2020, this project has been archived since AmazonMusic
                             changed their UI completely.
-                            <br />
-                            <a href="https://github.com/dev-bhatia/amazonMusicDarkMode" target="_blank">
-                                View&nbsp;Project
-                            </a>
                         </p>
                     </div>
                 </div>
@@ -208,23 +191,18 @@
                 <hr />
                 <ul>
                     <li class="pb-1">
-                        <a href="#" data-toggle="modal" data-target="#resumeGIF">
+                        <a href="#" data-toggle="modal" data-target="#resumeGIFModal">
                             Resume Evolution GIF of ~50 resumes I made during college
                         </a>
                     </li>
                     <li class="pb-1">
-                        <a href="https://youtu.be/5sZXZ7gAxU8" target="_blank">
+                        <a href="#" data-toggle="modal" data-target="#UCSDWebinarModal">
                             Webinar I was on with the UCSD Career Center on how to get internships
                         </a>
                     </li>
                     <li class="pb-1">
-                        <a href="https://dev-bhatia.github.io/Gemini_Mars" target="_blank">
+                        <a href="#" data-toggle="modal" data-target="#GeminiMars">
                             2016 International Gemini Mars Competition by The Mars Society
-                        </a>
-                    </li>
-                    <li class="pb-1">
-                        <a href="https://dev-bhatia.github.io/404.html">
-                            The 404 page of this site
                         </a>
                     </li>
                 </ul>
@@ -236,9 +214,10 @@
         <br />
         <br />
         <p class="text-muted">
-            This site is one HTML file decorated with
-            <a href="https://getbootstrap.com/" target="_blank">Bootstrap&nbsp;v4.6</a>,
+            This site is one file decorated with
+            <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>,
             <a href="https://primer.style/" target="_blank">Primer</a>,
+            <a href="https://www.toptal.com/designers/htmlarrows/" target="_blank">HTML Arrows</a>,
             and
             <a href="https://www.fontawesome.com" target="_blank">Font Awesome icons</a>
             because
@@ -254,7 +233,7 @@
 
     <!-- STUFF THAT RUNS IN THE BACK -->
     <!-- RESUME GIF MODAL -->
-    <div class="modal fade" id="resumeGIF" role="dialog">
+    <div class="modal fade" id="resumeGIFModal" role="dialog">
         <div class="modal-dialog modal-fullscreen modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -266,12 +245,81 @@
                     </button>
                 </div>
                 <div class=" modal-body">
-                            <img src="https://github.com/dev-bhatia/vault/blob/main/me/resume.gif?raw=true"
-                                alt="Couldn't fetch resume GIF :(" style="display: inline-block; width: 100%;" />
+                    <img src="https://github.com/dev-bhatia/vault/blob/main/me/resume.gif?raw=true"
+                        alt="Couldn't fetch resume GIF :(" style="display: inline-block; width: 100%;" />
                 </div>
             </div>
         </div>
     </div>
+    <!-- UCSD Webinar Video MODAL -->
+    <div class="modal fade" id="UCSDWebinarModal" role="dialog">
+        <div class="modal-dialog modal-lg modal-fullscreen modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        UCSD Webinar
+                    </h5>
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">
+                        <i class="fas fa-times"></i>&nbsp;Close
+                    </button>
+                </div>
+                <div class=" modal-body yt-video-container">
+                    <center>
+                        <iframe id="ytplayer" type="text/html" width="720" height="405"
+                            src="https://www.youtube.com/embed/5sZXZ7gAxU8" frameborder="0" allowfullscreen></iframe>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gemini Mars Modal -->
+    <div class="modal fade" id="GeminiMars" role="dialog">
+        <div class="modal-dialog modal-lg modal-fullscreen modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        2016 Gemini Mars Design&nbsp;Competition
+                    </h5>
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">
+                        <i class="fas fa-times"></i> Close
+                    </button>
+                </div>
+                <div class=" modal-body">
+                    A few friends and I participated in this collegiate level competition hosted by The Mars
+                    Society during our Junior/Senior year of high school. Ultimately, we made it to the final round -
+                    Top 10 in the World!
+                    <br />
+                    <br />
+                    "The requirement is to design a two-person Mars flyby mission that can be launched no later than
+                    2024 as cheaply, safely and simply as possible. All other design variables are open."
+                    <br />
+                    <br />
+                    <a href="https://www.marssociety.org/news/2015/09/11/mars-society-announces-international-gemini-mars-design-competition/"
+                        target="_blank">
+                        Read more about the competition here&nbsp;&#x2197;
+                    </a>
+                    <br />
+                    <a href="https://www.marssociety.org/news/2015/09/11/mars-society-announces-international-gemini-mars-design-competition/"
+                        target="_blank">
+                        Check out our team's mission proposal&nbsp;&#x2197;
+                    </a>
+                    <br />
+                    <a href="https://www.marssociety.org/news/2015/09/11/mars-society-announces-international-gemini-mars-design-competition/"
+                        target="_blank">
+                        View our Final Round presentation&nbsp;&#x2197;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPTs -->
+    <!-- STOP Video Playback in Modal for UCSDWebinarModal -->
+    <script>
+        $("#UCSDWebinarModal").on('hidden.bs.modal', function (e) {
+            $("#UCSDWebinarModal iframe").attr("src", $("#UCSDWebinarModal iframe").attr("src"));
+        });
+    </script>
 </body>
 
 </html>
