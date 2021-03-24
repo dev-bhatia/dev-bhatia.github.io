@@ -115,15 +115,7 @@
     #2f57fd0d 72%,
     #fcb0451a 100%
   );
-  border: 1px solid rgb(0, 0, 0);
 }
-
-.white-bg {
-  color: #222;
-  background: #fff;
-  border: 1px solid #333;
-}
-
 /* PHONE */
 @media (min-width: 0px) {
   .screen-sm {
@@ -144,7 +136,7 @@
 }
 
 .logo-png {
-  width: 45px !important;
+  width: 60px !important;
 }
 
 /* YOUTUBE VIDEO EMBED MODAL */
