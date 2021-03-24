@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -19,19 +19,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Dev Bhatia" />
     <meta name="description" content="Dev Bhatia's Website" />
-    <meta name="keywords" content="Engineer, Personal, Website, Blog, Projects" />
-
-    <!-- FAVICON -->
-    <link rel="icon" href="assets/favicon.ico">
+    <meta name="keywords" content="Dev Bhatia, Engineer, Personal, Website, Projects, Code, Web, Software" />
 
     <!-- SITE TITLE ON TAB-->
     <title>Dev</title>
 
+    <!-- FAVICON & CSS -->
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles/index.css" />
+
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/9edf4d45cd.js" crossorigin="anonymous"></script>
-
-    <!-- PRIMER -->
-    <link href="https://unpkg.com/@primer/css/dist/timeline.css" rel="stylesheet" />
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -42,12 +40,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-
-    <!-- YOUTUBE EMBED VIDEO -->
-    <!-- YOUTUBE BOOTSTRAP MODAL -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/dev-bhatia/cdn@master/bootstrapYouTubeModal/bs-yt-modal.css" />
-    <link rel="stylesheet" href="styles/index.css" />
 </head>
 
 <body class="bg-light">
@@ -65,25 +57,25 @@
                         </p>
                     </div>
                     <div class="p-0 m-0 screen-lg">
-                        <a href="https://www.github.com/dev-bhatia" target="_blank"
+                        <a href="https://www.github.com/dev-bhatia" target="_blank" rel="noreferrer"
                             class="btn br-15 btn-outline-dark shadow">
                             <i class="fab fa-github"></i>&nbsp;&nbsp;&nbsp;Github
                         </a>
                         &nbsp;
-                        <a href="https://www.linkedin.com/in/dev-bhatia" target="_blank"
-                            class="btn br-15 btn-outline-dark shadow">
+                        <a href="https://www.linkedin.com/in/dev-bhatia" target="_blank" rel="noreferrer"
+                            class="btn br-15 btn-outline-primary shadow">
                             <i class="fab fa-linkedin-in"></i>&nbsp;&nbsp;&nbsp;Linkedin
                         </a>
                     </div>
                     <div class="p-0 m-0 screen-sm">
-                        <a href="https://www.linkedin.com/in/dev-bhatia" target="_blank"
-                            class="btn br-15 btn-lg btn-outline-dark shadow">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        &nbsp;
-                        <a href="https://www.github.com/dev-bhatia" target="_blank"
+                        <a href="https://www.github.com/dev-bhatia" target="_blank" rel="noreferrer"
                             class="btn br-15 btn-lg btn-outline-dark shadow">
                             <i class="fab fa-github"></i>
+                        </a>
+                        &nbsp;
+                        <a href="https://www.linkedin.com/in/dev-bhatia" target="_blank" rel="noreferrer"
+                            class="btn br-15 btn-lg btn-outline-dark shadow">
+                            <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
                 </div>
@@ -97,7 +89,7 @@
             <div class="card-body pb-0">
                 <div class="d-flex flex-row flex-wrap">
                     <div class="p-2 flex-grow-1">
-                        <h5>Experience</h5>
+                        <h4 class="font-weight-bold">Experience</h4>
                         <hr class="p-0 m-0" />
                         <ul class="list-unstyled mt-3">
                             <li class="media">
@@ -131,7 +123,7 @@
                         </ul>
                     </div>
                     <div class="p-2 flex-grow-1">
-                        <h5>Education</h5>
+                        <h4 class="font-weight-bold">Education</h4>
                         <hr class="p-0 m-0" />
                         <ul class="list-unstyled mt-3">
                             <li class="media">
@@ -153,8 +145,7 @@
         <br />
         <div class="card border-0 br-25 shadow">
             <div class="card-body p-4">
-                <h5>Projects</h5>
-                <hr class="p-0 m-0" />
+                <h4 class="font-weight-bold">Projects</h4>
                 <div class="pl-2 pr-2 mt-3">
                     <div class="row row-cols-1 row-cols-md-2">
                         <div class="col mb-4">
@@ -165,13 +156,18 @@
                                     </h5>
                                     <p class="card-text screen-lg">
                                         This site is one file decorated with
-                                        <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                                        <a href="https://getbootstrap.com/" rel="noreferrer"
+                                            target="_blank">Bootstrap</a>
                                         and
-                                        <a href="https://www.fontawesome.com" target="_blank">Font Awesome</a> because
+                                        <a href="https://www.fontawesome.com" rel="noreferrer" target="_blank">Font
+                                            Awesome</a> because
                                         the code easiest to maintain is the code that was never written.
                                     </p>
+                                    <p class="card-text screen-sm">
+                                        How I started learning about web development
+                                    </p>
                                     <a href="https://github.com/dev-bhatia/dev-bhatia.github.io" target="_blank"
-                                        class="btn br-15 btn-outline-dark">
+                                        rel="noreferrer" class="btn br-15 btn-outline-dark">
                                         <i class="fas fa-code-branch"></i>&nbsp;&nbsp;Source
                                     </a>
                                 </div>
@@ -188,8 +184,11 @@
                                         across the AmazonMusic website. As of October 2020, this project has been
                                         archived since AmazonMusic changed their UI completely.
                                     </p>
+                                    <p class="card-text screen-sm">
+                                        Reduces eye strain on AmazonMusic's website (archieved)
+                                    </p>
                                     <a href="https://github.com/dev-bhatia/amazonMusicDarkMode" target="_blank"
-                                        class="btn br-15 btn-outline-dark">
+                                        rel="noreferrer" class="btn br-15 btn-outline-dark">
                                         <i class="fas fa-code-branch"></i>&nbsp;&nbsp;Source
                                     </a>
                                 </div>
@@ -206,9 +205,8 @@
         <br />
         <div class="card border-0 br-25 shadow">
             <div class="card-body">
-                <h5 class="card-title">Misc.</h5>
-                <hr />
-                <ul>
+                <h4 class="font-weight-bold">Misc.</h4>
+                <ul class="mt-3">
                     <li class="pb-1">
                         <a href="#" data-toggle="modal" data-target="#resumeGIFModal">
                             Resume Evolution GIF of ~50 resumes I made during college
@@ -233,8 +231,6 @@
         <br />
     </div>
 
-
-    <!-- STUFF THAT RUNS IN THE BACK -->
     <!-- RESUME GIF MODAL -->
     <div class="modal fade" id="resumeGIFModal" role="dialog">
         <div class="modal-dialog modal-fullscreen modal-dialog-centered">
@@ -248,8 +244,8 @@
                     </button>
                 </div>
                 <div class=" modal-body">
-                    <img src="https://github.com/dev-bhatia/vault/blob/main/me/resume.gif?raw=true"
-                        alt="Couldn't fetch resume GIF :(" style="display: inline-block; width: 100%;" />
+                    <img src="assets/resume.gif" alt="Couldn't fetch resume GIF :("
+                        style="display: inline-block; width: 100%;" />
                 </div>
             </div>
         </div>
@@ -317,7 +313,6 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPTs -->
     <!-- STOP Video Playback in Modal for UCSDWebinarModal -->
     <script>
         $("#UCSDWebinarModal").on('hidden.bs.modal', function (e) {
