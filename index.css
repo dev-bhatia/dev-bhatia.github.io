@@ -119,7 +119,7 @@
 /* PHONE */
 @media (min-width: 0px) {
   .screen-sm {
-    display: block !important;
+    display: inline-block !important;
   }
   .screen-lg {
     display: none !important;
@@ -131,7 +131,7 @@
     display: none !important;
   }
   .screen-lg {
-    display: block !important;
+    display: inline-block !important;
   }
 }
 
@@ -144,8 +144,9 @@
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
-  height: 0;
   overflow: hidden;
+  width: 100%;
+  height: 400px;
 }
 
 .yt-video-container iframe,
