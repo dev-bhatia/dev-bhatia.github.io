@@ -158,3 +158,8 @@
   width: 100%;
   height: 100%;
 }
+
+/* HOVER */
+.select-hover:hover {
+  background-color: rgba(34, 34, 34, 0.055);
+}
