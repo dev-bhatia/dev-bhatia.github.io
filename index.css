@@ -133,6 +133,9 @@
   .screen-lg {
     display: inline-block !important;
   }
+  .container {
+    width: 70% !important;
+  }
 }
 
 .logo-png {
