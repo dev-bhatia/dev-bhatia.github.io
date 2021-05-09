@@ -166,3 +166,8 @@
 .select-hover:hover {
   background-color: rgba(34, 34, 34, 0.055);
 }
+
+.bg-gradient-body {
+  background: #EEE;
+  background: radial-gradient(circle, rgba(246,246,246,1) 0%, rgba(246,229,223,0.5172443977591037) 48%, rgba(241,241,241,1) 100%);
+}

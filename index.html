@@ -42,7 +42,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body class="">
+<body class="bg-light">
     <div class="container">
         <!-- INTRO -->
         <br />
@@ -127,7 +127,8 @@
                         </a>
                     </h5>
                     <p class="mb-0">
-                        Simple stupid task management, planing, and organizaiton in the terminal. Built with Python.
+                        A <a href="https://en.wikipedia.org/wiki/KISS_principle" target="_blank" rel="noreferrer"
+                            class="h6">Simple, stupid</a> task management and organizaiton CLI tool. Built with Python.
                         Open source.
                     </p>
                 </div>
@@ -186,11 +187,11 @@
                             2016 International Gemini Mars Competition by The Mars Society
                         </a>
                     </li>
-                    <li class="pb-2">
+                    <!-- <li class="pb-2">
                         <a href="#" data-toggle="modal" data-target="#bookmarkModal" rel="noreferrer">
                             Bookmarked & saved to read or watch
                         </a>
-                    </li>
+                    </li> -->
                     <li class="pb-2">
                         <a href="#" data-toggle="modal" data-target="#interviewPrep" rel="noreferrer">
                             Techincal interview prep. stuff I've found helpful
@@ -224,8 +225,8 @@
                     <h5 class="modal-title">
                         Resume Evolution GIF
                     </h5>
-                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">
-                        <i class="fas fa-times"></i>&nbsp;Close
+                    <button type="button" class="btn btn-danger btn-lg py-0" data-dismiss="modal">
+                        <h2><b>&times;</b></h2>
                     </button>
                 </div>
                 <div class=" modal-body">
@@ -246,8 +247,8 @@
                     <h5 class="modal-title">
                         UCSD Webinar
                     </h5>
-                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">
-                        <i class="fas fa-times"></i>&nbsp;Close
+                    <button type="button" class="btn btn-danger btn-lg py-0" data-dismiss="modal" onclick="stopAudioPlayback()">
+                        <h2><b>&times;</b></h2>
                     </button>
                 </div>
                 <div class=" modal-body yt-video-container">
@@ -267,14 +268,15 @@
                     <h5 class="modal-title">
                         Triton Tools & Tidbits
                     </h5>
-                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal"
-                        onclick="stopAudioPlayback()">
-                        <i class="fas fa-times"></i>&nbsp;Close
+                    <button type="button" class="btn btn-danger btn-lg py-0" data-dismiss="modal" onclick="stopAudioPlayback()">
+                        <h2><b>&times;</b></h2>
                     </button>
                 </div>
                 <div class=" modal-body">
-                    <iframe src="https://player.acast.com/triton-tools-tidbits/episodes/career-advice" frameBorder="0"
-                        width="100%" height="400px" allow="autoplay"></iframe>
+                    <!-- <iframe src="https://player.acast.com/triton-tools-tidbits/episodes/career-advice" frameBorder="0"
+                        width="100%" height="400px" allow="autoplay"></iframe> -->
+                    <iframe src="https://open.spotify.com/embed/episode/4NxSo8FHIs8zIXf1ogc4OK" width="100%"
+                        height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
         </div>
@@ -287,8 +289,8 @@
                     <h5 class="modal-title">
                         2016 Gemini Mars Design&nbsp;Competition
                     </h5>
-                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">
-                        <i class="fas fa-times"></i> Close
+                    <button type="button" class="btn btn-danger btn-lg py-0" data-dismiss="modal">
+                        <h2><b>&times;</b></h2>
                     </button>
                 </div>
                 <div class=" modal-body">
@@ -328,8 +330,8 @@
                     <h5 class="modal-title">
                         Bookmarked & Saved
                     </h5>
-                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">
-                        <i class="fas fa-times"></i>&nbsp;Close
+                    <button type="button" class="btn btn-danger btn-lg py-0" data-dismiss="modal">
+                        <h2><b>&times;</b></h2>
                     </button>
                 </div>
                 <div class=" modal-body">
@@ -389,8 +391,8 @@
                     <h5 class="modal-title">
                         Techincal interview prep. stuff
                     </h5>
-                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">
-                        <i class="fas fa-times"></i>&nbsp;Close
+                    <button type="button" class="btn btn-danger btn-lg py-0" data-dismiss="modal">
+                        <h2><b>&times;</b></h2>
                     </button>
                 </div>
                 <div class=" modal-body">
@@ -422,10 +424,16 @@
                             </a>
                         </li>
                     </ul>
-                    <h6 class="font-weight-bold">Books</h6>
+                    <h6 class="font-weight-bold">Reading</h6>
                     <ul>
                         <li>Cracking the PM Interview <i class="text-muted">by Gayle Laakmann McDowell & Jackie
                                 Bavaro</i></li>
+                        <li>
+                            <a target="_blank" rel="noreferrer"
+                                href="https://rotorlab.tamu.edu/me489/README/2010%20ASME%20Unwritten_Laws_of_Enginering.pdf">
+                                The unwritten laws of engineering
+                            </a><i class="text-muted">by W. J. King and James G. Skakoon</i>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -440,8 +448,8 @@
                     <h5 class="modal-title">
                         Stuff to build stuff
                     </h5>
-                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">
-                        <i class="fas fa-times"></i>&nbsp;Close
+                    <button type="button" class="btn btn-danger btn-lg py-0" data-dismiss="modal">
+                        <h2><b>&times;</b></h2>
                     </button>
                 </div>
                 <div class=" modal-body">
@@ -488,6 +496,9 @@
         // STOP Video Playback in Modal for UCSDWebinarModal
         $("#UCSDWebinarModal").on('hidden.bs.modal', function (e) {
             $("#UCSDWebinarModal iframe").attr("src", $("#UCSDWebinarModal iframe").attr("src"));
+        });
+        $("#podcastModal").on('hidden.bs.modal', function (e) {
+            $("#podcastModal iframe").attr("src", $("#podcastModal iframe").attr("src"));
         });
     </script>
 </body>
