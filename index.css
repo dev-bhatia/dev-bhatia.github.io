@@ -154,7 +154,21 @@
 
 /* HOVER */
 .select-hover:hover {
-  background-color: #0000000e;
+  /* background-color: #0000000e; */
+
+  background: #eee;
+  background: linear-gradient(
+    45deg,
+    #833ab41a 0%,
+    #fd1d1d0d 25%,
+    #2f57fd0d 50%,
+    #fcb0451a 75%
+  );
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
 }
 
 .bg-body {
