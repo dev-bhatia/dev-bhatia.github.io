@@ -1,0 +1,24 @@
+/* PHONE */
+@media (min-width: 0px) {
+  .screen-sm {
+    display: block !important;
+  }
+  .screen-lg {
+    display: none !important;
+  }
+  .container {
+    width: 90% !important;
+  }
+}
+/* TABLET */
+@media (min-width: 768px) {
+  .screen-sm {
+    display: none !important;
+  }
+  .screen-lg {
+    display: block !important;
+  }
+  .container {
+    width: 60% !important;
+  }
+}
