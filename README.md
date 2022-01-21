@@ -1,1 +1,2 @@
-[My Personal Website](https://dev-bhatia.github.io)
+# my website
+[dev-bhatia.github.io](https://dev-bhatia.github.io)

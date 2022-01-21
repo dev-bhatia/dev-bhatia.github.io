@@ -22,3 +22,15 @@
     width: 60% !important;
   }
 }
+/* Desktop */
+@media (min-width: 1200px) {
+  .screen-sm {
+    display: none !important;
+  }
+  .screen-lg {
+    display: block !important;
+  }
+  .container {
+    width: 40% !important;
+  }
+}
